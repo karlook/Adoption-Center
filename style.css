@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: nunito;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+.section {
+    margin: 4em auto;
+    width: 90%;
+    max-width: 115em;
+
+   /* position: relative; */
+}
+
+.ul-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+    width: 100%;
+}
+
+img {
+    object-fit: cover;
+    border-radius: 7px;
+    transition: 300ms;
+}
+
+/*
+
+Firefox does not support ::-webkit-scrollbar :'(
+
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(100, 205, 209);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgb(100, 205, 209);
+}
+
+*/
+
+/*------------ Header starts -------------*/
+
+header {  
+    height: 90px;
+    text-align: center;
+}
+
+.header-container {
+
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    display: flex;
+
+    z-index: 2;
+    
+    background-color: rgb(234, 252, 255);
+    border-bottom: 8px solid rgb(100, 205, 209);
+    box-shadow: 0px 5px 6px rgba(100, 205, 209, 0.5);
+}
+
+header .logo {
+    padding: 18px 30px;
+    transition: 300ms ease;
+}
+
+header .logo:hover {
+    transform: scale(1.1);
+}
+
+.main-nav {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: rgb(100, 205, 209);
+    transition: 200ms ease;
+}
+
+.main-nav .active {
+    border-radius: 4px;
+    padding: 5px 15px;
+    color: white;
+    background-color: rgb(100, 205, 209);
+}
+
+.main-nav a:hover {
+    color: #5d8894;
+}
+
+.main-nav .active:hover {
+    color: white;
+    background-color: rgb(49, 184, 184);
+}
+
+.main-nav ul {
+    padding: 33px 20px;
+    flex-wrap: wrap;
+}
+
+.main-nav li {
+    display: inline-block;
+    padding: 0 10px 0 15px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    border-right: 0.17em solid rgb(100, 205, 209);
+}
+
+/*---------------- Header Ends ---------------*/
+
+
+/*--------------- Hero Begins ---------------*/
+
+.hero {
+    width: 100%;
+    height: 850px;
+    background-image: linear-gradient(to right, rgba(27,45,70,0), rgba(27, 45, 70, 0.73)), url("img/Document.jpg");
+    position: relative;
+    background-size: cover;
+    border-bottom: 7px solid rgb(100, 205, 209);
+
+    z-index: 1;
+}
+
+.hero-text {
+    font-weight: 700;
+    width: 19em;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+    position: absolute;
+    left: 62%;
+    top: 16%;
+   /* transform: translate(-50%, -50%); */
+}
+
+.hero-text button {
+    font-family: nunito;
+    font-size: 0.6em;
+    font-weight: 700;
+    
+    margin-top: 1em;
+    padding: 0.8rem 2.5rem;
+
+    color: rgb(231, 243, 243);
+    background-color: rgba(0,0,0,0);
+    border: 0.25em solid rgb(100, 205, 209);
+    border-radius: 5px;
+
+    display: inline-block;
+    cursor: pointer;
+    transition: 400ms ease;
+}
+
+.hero-text button:hover {
+    color: rgb(255, 255, 255);
+    border: 0.25em solid #fff;
+    background-color: rgb(100, 205, 209);
+
+}
+
+/*--------------- Hero Ends ---------------*/
+
+/*--------------- Notice Begins ---------------*/
+
+.notice-section h2 {
+    margin-bottom: 2rem;
+    color: rgb(233, 126, 126);
+    border-bottom: 2px solid rgb(233, 126, 126);
+}
+
+.notices {
+    border: 1px solid rgba(233, 126, 126, 0.4);
+    border-radius: 7px;
+    box-shadow: 0px 0px 1.5em rgba(233, 126, 126, 0.4);
+    margin: 3em;
+
+    text-align: center;
+}
+
+.notices ul {
+    padding: 0 6.5em;
+}
+
+.notices li {
+    list-style-type: none;
+    padding: 2em 0;
+
+    font-size: 1.05em;
+}
+
+/*
+.notices li:first-of-type {
+    margin-left: 6.5em;
+}
+
+.notices li:last-of-type {
+    margin-right: 6.5em;
+}
+*/
+
+.notices h3 {
+    width: 16em;
+    margin: 0 auto;
+    margin-bottom: 1.3em;
+    padding: 0.4em;
+    color: rgb(212, 119, 119);
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+    box-shadow: 0 0.3em 1em rgba(233, 126, 126, 0.4);
+}
+
+.notices img {
+    border: 3px solid rgb(212, 119, 119);
+    margin-bottom: 1em;
+}
+
+.notices p{
+    margin: 0 auto;
+    line-height: 1.25em;
+    text-align: justify;
+    width: 20em;
+    hyphens: auto;
+    /* text-rendering: optimizeLegibility; */
+
+    color: rgb(212, 119, 119);
+}
+
+.notices a {
+    font-weight: 700;
+    color: rgb(161, 79, 79);
+}
+
+.notices a:hover {
+    color: #466399;
+}
+
+
+/*--------------- Notice Ends ---------------*/
+
+/*--------------- Mascotas Begins ---------------*/
+
+.mascotas-container h2 {
+    color: rgb(100, 205, 209);
+    border-bottom: 2px solid rgb(100, 205, 209);
+}
+
+.mascotas-grid {
+    margin: 3em;
+    border: 1px solid rgb(100, 205, 209);
+    border-radius: 7px;
+    box-shadow: 0 0 1.5em rgb(100, 205, 209);
+}
+
+.mascotas-grid h3 {
+    margin: 0.5em auto;
+    background-color: rgb(100, 205, 209);
+    border-radius: 7px;
+    box-shadow: 0 0.1em 0.6em rgb(100, 205, 209);
+    color: #fff;
+
+    transition: 300ms ease;
+}
+
+.mascotas-grid h3:hover {
+    background-color: rgb(49, 184, 184);
+}
+
+.mascotas-grid ul {
+    margin: 0 auto;
+    padding: 3em;
+}
+
+.mascotas-grid li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1.3em;
+    padding: 1em;
+}
+
+.mascotas-grid img {
+    border: 3px solid rgb(100, 205, 209);
+}
+
+.mascotas-grid img:hover {
+    transform: scale(1.1);
+}
+
+/*--------------- Mascotas Ends ---------------*/
+
+/*--------------- Footer Begins ---------------*/
+
+footer {
+    background-color: rgb(206, 233, 241);
+    box-shadow: 0px 0px 15px rgba(67, 150, 153, 0.5);
+    border-radius: 7px;
+
+    margin: 0 auto;
+    margin-bottom: 2em;
+    height: 11.3em;
+    width: 95%;
+    max-width: 115em;
+    text-align: center;
+}
+
+.footer-logo img {
+    margin-top: 1.5em;
+    margin-bottom: 1.3em;
+}
+
+.footer-container {
+
+    font-size: 0.43em;
+    width: 150em;
+    margin: 0 auto;
+    color: #3a5a64;
+}
+
+@media screen and (max-width: 640px) {
+
+    body {
+        font-size: 0.9em;
+    }
+
+    .hero {
+        height: 15em;
+    }
+
+    .hero-text {
+        position: static;
+        font-size: 1rem;
+        margin: auto;
+        padding-top: 4em;
+    }
+    
+    .hero-text button {
+        margin-top: 0.5em;
+        padding: 0.3em 2em;
+        font-size: 0.8rem;
+        color: #fff;
+        background-color: rgb(100, 205, 209);
+    }
+
+    .mascotas-grid {
+        margin: 2rem 0;
+        padding: 0;
+    }
+
+    .notices {
+        margin: 2rem 0;
+        padding: 0;
+    }
+
+    .notices p {
+        width: 17rem;
+    }
+
+    footer {
+        height: 15rem;
+    }
+
+    .footer-container {
+        width: 19rem;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width: 1100px) {
+    .hero {
+        height: 30em;
+    }
+    .hero-text {
+        position: static;
+        font-size: 2rem;
+        margin: auto;
+        padding-top: 4em;
+    }
+
+    .hero-text button {
+        margin-top: 0.5em;
+        padding: 0.3em 2em;
+        color: #fff;
+        background-color: rgb(100, 205, 209);
+    }
+
+    footer {
+        height: 13rem;
+    }
+
+    .footer-container {
+        width: 40rem;
+    }
+}
