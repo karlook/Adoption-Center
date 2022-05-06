@@ -33,7 +33,7 @@ h2 {
     width: 100%;
 }
 
-img {
+.ul-box img {
     object-fit: cover;
     border-radius: 7px;
     transition: 300ms;
@@ -158,7 +158,7 @@ header .logo:hover {
    /* transform: translate(-50%, -50%); */
 }
 
-.hero-text button {
+.adopt-button {
     font-family: nunito;
     font-size: 0.6em;
     font-weight: 700;
@@ -176,7 +176,7 @@ header .logo:hover {
     transition: 400ms ease;
 }
 
-.hero-text button:hover {
+.adopt-button:hover {
     color: rgb(255, 255, 255);
     border: 0.25em solid #fff;
     background-color: rgb(100, 205, 209);
@@ -262,6 +262,60 @@ header .logo:hover {
 
 /*--------------- Notice Ends ---------------*/
 
+/*--------------- Banner Begins ---------------*/
+
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(100, 205, 209);
+}
+
+.banner-img {
+    margin: -3.5% 0 -5% 10%;
+    flex: 20%;
+    /* background-color: #8299a0; */
+}
+
+.banner-text {
+    margin: auto 0;
+    flex: 45%;
+    padding: 2em;
+    /* background-color: rgb(206, 233, 241); */
+    border: 5px;
+}
+
+.banner-text h3 {
+    color: #3a5a64;
+    font-size: 3em;
+}
+
+.banner-text h2 {
+    color: #ffffff;
+    padding-left: 0.25em;
+    background-color: #3a5a64;
+    font-weight: bolder;
+    font-size: 4.9em;
+}
+
+.banner-text h4 {
+    color: #3a5a64;
+    font-size: 2.07em;
+}
+
+.banner-adopt-button .adopt-button {
+    color: #3a5a64;
+    font-size: 1.5em;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0.25em solid rgba(255, 255, 255);
+}
+
+.banner-adopt-button .adopt-button:hover {
+    color: #ffffff;
+    background-color: #3a5a64;
+}
+
+/*--------------- Banner Ends ---------------*/
+
 /*--------------- Mascotas Begins ---------------*/
 
 .mascotas-container h2 {
@@ -319,8 +373,7 @@ footer {
     box-shadow: 0px 0px 15px rgba(67, 150, 153, 0.5);
     border-radius: 7px;
 
-    margin: 0 auto;
-    margin-bottom: 2em;
+    margin: 3em auto 2em auto;
     height: 11.3em;
     width: 95%;
     max-width: 115em;
